@@ -1,0 +1,234 @@
+body {
+    /* background-color: #f8edf1 !important; */
+    background-color: white !important;
+}
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+/* navbar */
+.navbar{
+    height: 5rem;
+    background-color: white;
+    /* FFE5EC */
+}
+.fa-house-chimney-user{
+    color: #ff4d6d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #242424 !important;
+    font-size: larger !important;
+    font-weight: 500 !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+.navbar-brand{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-weight: 600 !important;
+    color: #404040 !important;
+    font-size:x-large !important;
+    padding-left: 15px !important;
+}
+
+/* footer */
+.f-info-links a{
+    text-decoration: none;
+    color:#242424;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+    color:#242424;
+}
+
+.f-info-links, .f-info-socials, .f-info-brand{
+    width: 100%;
+    padding-top: 1rem;
+    vertical-align:middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-info-socials i{
+    margin-right: 1 rem;
+    font-size: 1.5rem;
+}
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #DCDCDC;
+    /* background-color: white; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* index cards */
+.card{
+    border: none !important;
+    margin: 0.5rem;
+    /* background-color: #f8edf1 !important; */
+    background-color: white !important;
+    border-radius: 1.2rem !important;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card-img{
+    border-radius: 1.5rem;
+    width: 100% !important;
+    object-fit: cover !important;
+    border-radius: 1.2rem !important;
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-text{
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+.listing-link{
+    text-decoration: none;
+}
+.card-img-overlay:hover{
+    opacity:0.2 ; 
+    background-color: white ; 
+}
+
+/* create new listing */
+.add-btn, .edit-btn{
+    background-color: #ff4d6d !important;
+    border: none !important;
+}
+
+/* show cards */
+.show-img{
+    height: 45vh;
+    border-radius: 16px 16px 0 0 !important;
+}
+.card-show{
+    width: 30rem;
+    border: 0.5px solid #c5c1c1 !important;
+    /* padding: 1rem; */
+    padding-bottom: 1rem;
+    margin-left: 50px;
+}
+.card-show-body{
+padding: 0 1rem 0 1rem !important;
+}
+.btns{
+    display: flex; 
+}
+.btn-1, .btn-2{
+    background-color: #ff4d6d !important;
+    border: none !important;
+}
+.show-page{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* errors */
+.alert-heading{
+    text-align: center;
+}
+.alert{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+
+/* reviews */
+.review{
+    margin-left: 80px;
+}
+.submit-btn{
+    background-color: #ff4d6d !important;
+    border: none !important;
+    color: white !important;
+}
+.review-card{
+    border: 1px solid #c5c1c1 !important;
+}
+.del-btn{
+    background-color: #ff4d6d !important;
+    border: none !important;
+    color: white !important;
+    border-radius: 8px !important;
+}
+
+/* map */
+#map {
+    height: 350px;
+    width: 110vh;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+/* login, signup */
+.login-btn, .signup-btn{
+    background-color: #ff4d6d !important;
+    border: none !important;
+}
+
+.login-heading, .signup-heading {
+    color: #ff4d6d;
+}
+
+/* filters */
+#filters{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10rem;
+}
+.filter{
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    opacity: 0.7;
+}
+
+.filter:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.filter p {
+    font-size: 0.8rem;
+}
+
+/* tax-toggle */
+.tax-info {
+    display: none;
+}
+
+.tax-toggle{
+    border: 1px solid #525252;
+    border-radius: 1rem;
+    height: 2.5rem;
+    padding: 1rem;
+    margin-left: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+.form-check-input:checked {
+    background-color: #ff4d6d;   /* toggle background */
+    border-color: #ff4d6d;
+}
+.form-check-input {
+    cursor: pointer;
+} 
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 77, 109, 0.25);
+}
