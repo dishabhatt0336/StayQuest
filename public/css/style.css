@@ -297,21 +297,30 @@ align-items: center;
 } */
 /* Tablet (≤ 992px) */
 @media (max-width: 992px) {
+.show-page {
+flex-direction: column;
+padding: 0.75rem;
+/* gap: 1rem; */
+}
 .card-show {
-    margin-left: 25%;
+    margin-left: 18%;
     max-width: 100%;
 }
 
 .review {
-    margin-left: 25%;
+    margin-left: 20%;
     margin-top: 15px;
+    max-width: 100%;
+    width: 100%;
 }
-
+.review-card.col-5{
+    flex: 1 1 100%;
+    margin-left: 20%;
+    max-width: 100%;
+    width: 100%;
+}
 .show-page {
     padding: 1rem;
-}
-.review-card {
-    flex: 1 1 100%;
 }
 }
 
@@ -320,11 +329,11 @@ align-items: center;
 .show-page {
     flex-direction: column;
     padding: 0.75rem;
-    gap: 1rem;
+    /* gap: 1rem; */
 }
 
 .card-show {
-    margin-left: 25%;
+    margin-left: 18%;
     max-width: 100%;
     width: 100%;
 }
@@ -334,22 +343,17 @@ align-items: center;
 }
 
 .review {
-    margin-left: 25%;
-    min-width: unset;
+    margin-left: 20%;
+    max-width: 100%;
+    width: 100%;
+}
+.review-card{
+    margin-left: 20%;
+    max-width: 100%;
     width: 100%;
 }
 .review-card.col-5 {
     flex: 1 1 100%;
-}
-
-.btns {
-    flex-direction: column;
-    padding: 0 0.75rem;
-}
-
-.btns .btn {
-    width: 100%;
-    text-align: center;
 }
 }
 
@@ -364,8 +368,8 @@ align-items: center;
 }
 
 /* map's wrapper col already handles width, so just ensure it's fluid */
-.col-8.offset-2 {
-    width: 100%;
+map.col-8.offset-2 {
+    width: 80%;
     max-width: 100%;
 }
 

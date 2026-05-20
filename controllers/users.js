@@ -30,7 +30,7 @@ module.exports.renderLoginForm =  (req, res) => {
 
 module.exports.login = async (req, res) => {
     req.flash("success", "Welcome back to StayQuest!");
-    let redirectUrl = res.locals.redirectUrl || "/listings";
+    let redirectUrl = "/listings";
     res.redirect(redirectUrl);
 };
 
