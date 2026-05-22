@@ -163,6 +163,18 @@ justify-content: center;
 align-items: space-evenly;
 }
 
+/* ── Alerts ── */
+.alert-heading {
+text-align: center;
+}
+
+.alert {
+display: flex;
+justify-content: center;
+min-height: 80px;
+align-items: center;
+}
+
 /* index cards */
 .card{
 border: none !important;
@@ -236,7 +248,6 @@ padding: 0 1rem !important;
 /* ── Edit / Delete buttons ── */
 .btns {
 display: flex;
-padding: 0 1rem;
 }
 
 .btn-1,
@@ -249,7 +260,7 @@ color: white !important;
 /* ── Reviews section ── */
 .review {
 margin-left: 80px;
-flex: 1 1 300px;               /* grows/shrinks gracefully */
+flex: 1 1 300px;
 min-width: 280px;
 }
 
@@ -266,45 +277,25 @@ color: white !important;
 border-radius: 8px !important;
 }
 
-/* ── Alerts ── */
-.alert-heading {
-text-align: center;
-}
-
-.alert {
-display: flex;
-justify-content: center;
-min-height: 80px;              /* min instead of fixed — won't clip long messages */
-align-items: center;
-}
 /* ── Review card: fix star rating overflow ── */
 .review-card {
     border: 1px solid #c5c1c1 !important;
     border-radius: 8px !important;
-    /* overflow: hidden;
-    min-width: 0; */
     border: 1px solid #c5c1c1 !important;
     border-radius: 8px !important;
     flex: 1 1 100%;
 }
 
-/* ── Responsive ── */
-/* @media (max-width: 768px) {
-    .review-card.col-5 {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-} */
 /* Tablet (≤ 992px) */
 @media (max-width: 992px) {
 .show-page {
-flex-direction: column;
-padding: 0.75rem;
-/* gap: 1rem; */
+    flex-direction: column;
+    padding: 0.5rem;
 }
 .card-show {
     margin-left: 18%;
     max-width: 100%;
+    width: 100%;
 }
 
 .review {
@@ -315,12 +306,11 @@ padding: 0.75rem;
 }
 .review-card.col-5{
     flex: 1 1 100%;
+}
+.review-card{
     margin-left: 20%;
     max-width: 100%;
     width: 100%;
-}
-.show-page {
-    padding: 1rem;
 }
 }
 
@@ -328,8 +318,7 @@ padding: 0.75rem;
 @media (max-width: 576px) {
 .show-page {
     flex-direction: column;
-    padding: 0.75rem;
-    /* gap: 1rem; */
+    padding: 0.5rem;
 }
 
 .card-show {
@@ -338,17 +327,17 @@ padding: 0.75rem;
     width: 100%;
 }
 
-.show-img {
-    height: 30vh;
-}
+/* .show-img {
+    height: 40vh;
+} */
 
 .review {
-    margin-left: 20%;
+    margin-left: 15%;
     max-width: 100%;
     width: 100%;
 }
 .review-card{
-    margin-left: 20%;
+    margin-left: 15%;
     max-width: 100%;
     width: 100%;
 }
@@ -361,13 +350,12 @@ padding: 0.75rem;
 /* ── Map ── */
 #map {
     height: 350px;
-    width: 100%;          /* was 110vh — viewport-height as width is wrong and overflows on mobile */
+    width: 100%;
     max-width: 100%;
     border-radius: 15px !important;
     margin-bottom: 2rem;
 }
 
-/* map's wrapper col already handles width, so just ensure it's fluid */
 map.col-8.offset-2 {
     width: 80%;
     max-width: 100%;
@@ -376,7 +364,7 @@ map.col-8.offset-2 {
 /* ── Responsive map ── */
 @media (max-width: 768px) {
     #map {
-        height: 250px;    /* slightly shorter on mobile, still usable */
+        height: 280px;
     }
 }
 
