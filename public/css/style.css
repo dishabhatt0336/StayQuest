@@ -327,17 +327,17 @@ border-radius: 8px !important;
     width: 100%;
 }
 
-/* .show-img {
-    height: 40vh;
-} */
+.show-img {
+    height: 20vh;
+}
 
 .review {
-    margin-left: 15%;
+    margin-left: 10%;
     max-width: 100%;
     width: 100%;
 }
 .review-card{
-    margin-left: 15%;
+    margin-left: 10%;
     max-width: 100%;
     width: 100%;
 }
@@ -364,7 +364,7 @@ map.col-8.offset-2 {
 /* ── Responsive map ── */
 @media (max-width: 768px) {
     #map {
-        height: 280px;
+        height: 250px;
     }
 }
 
