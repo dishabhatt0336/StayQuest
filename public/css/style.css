@@ -322,13 +322,16 @@ border-radius: 8px !important;
 }
 
 .card-show {
-    margin-left: 18%;
+    margin-left: 10%;
     max-width: 100%;
     width: 100%;
 }
+.card-show.col-8{
+    flex: 1 1 100%;
+}
 
 .show-img {
-    height: 20vh;
+    height: 25vh;
 }
 
 .review {
